@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg bg-white">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="img/logo.png" width="60" height="60" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse full-width" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item li-margin li-hover">
+                    <a href="/" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item li-margin li-hover">
+                    <a href="/nosotros" class="nav-link">Nosotros</a>
+                </li>
+                <li class="nav-item li-margin li-hover">
+                    <a href="/tienda" class="nav-link">Tienda</a>
+                </li>
+                <li class="nav-item li-margin li-hover">
+                    <a href="/contacto" class="nav-link">Contacto</a>
+                </li>
+                <li class="nav-item li-margin">
+                    <a href=<%- ruta%> class="btn btn-primary">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <%- cont%>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>

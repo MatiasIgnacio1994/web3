@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <%- include('partials/head') %>
+</head>
+
+<body>
+    <%- include('partials/navbar')%>
+        <% function formatearCantidad(numero) { let numeroCadena=numero.toString();
+            numeroCadena=numeroCadena.replace(/\B(?=(\d{3})+(?!\d))/g, '.' ); return numeroCadena; } %>
+
+            <div class="jumbotron mt-5">
+                <% for(let i=0; i < transacciones.length; i++) {%>
+                    <h1 class="display-4 text-center">
+                        <%= transacciones[i]["nombre"] %>
+                    </h1>
+                    <p class="text-center precio-carrito">
+                        $ <%= formatearCantidad(transacciones[i]["precio"]); %>
+                    </p>
+                    <hr class="my-4">
+                    <% }%>
+                        <div class="container mx-auto">
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Pagar</a>
+                        </div>
+            </div>
+            <%- include('partials/footer')%>
+                <script src="script/carrito.js"></script>
+
+</body>
+
+</html>
