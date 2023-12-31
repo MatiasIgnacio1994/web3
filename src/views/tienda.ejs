@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <%- include('partials/head') %>
+</head>
+
+<body>
+    <%- include('partials/navbar')%>
+        <div class="containter-fluid text-center mt-5">
+            <p>
+                <button type="button" class="btn btn-primary">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="/carrito">VER CARRITO</a>
+                    <span class="badge badge-light">(<%- cant%>)</span>
+                </button>
+            </p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card mb-3 mt-5">
+                        <h3 class="card-header">Batería eléctrica</h3>
+                        <img src="img/bateria-elec.jpg" alt="bateria electrica">
+                        <div class="card-body">
+                            <p class="card-text">Batería eléctrica Roland TD-02KV.</p>
+                        </div>
+                        <div class="containter text-center">
+                            <p class="card-text">$519.990</p>
+                        </div>
+                        <div class="card-footer text-muted text-center">
+                            <a href=<%- link%> class="card-link" id="bateria"> Añadir al
+                                carrito <i class="fa-solid fa-circle-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mb-3 mt-5">
+                        <h3 class="card-header">Guitarra eléctrica</h3>
+                        <img src="img/guitarra.jpg" alt="bateria electrica">
+                        <div class="card-body">
+                            <p class="card-text">Guitarra Guild Starfire I DC CAB.</p>
+                        </div>
+                        <div class="containter text-center">
+                            <p class="card-text">$599.990</p>
+                        </div>
+                        <div class="card-footer text-muted text-center">
+                            <a href="#" class="card-link" id="guitarra"> Añadir al
+                                carrito <i class="fa-solid fa-circle-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mb-3 mt-5">
+                        <h3 class="card-header">Micrófono</h3>
+                        <img src="img/microfono.jpg" alt="bateria electrica">
+                        <div class="card-body">
+                            <p class="card-text">Micrófono Audio-Technica AT2020.</p>
+                        </div>
+                        <div class="containter text-center">
+                            <p class="card-text">$79.000</p>
+                        </div>
+                        <div class="card-footer text-muted text-center">
+                            <a href="#" class="card-link" id="microfono"> Añadir al
+                                carrito <i class="fa-solid fa-circle-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mb-3 mt-5">
+                        <h3 class="card-header">Parlante</h3>
+                        <img src="img/parlante.jpg" alt="bateria electrica">
+                        <div class="card-body">
+                            <p class="card-text">PreSonus Eris E3.5 BT - Monitores de estudio de campo cercano de 3.5
+                                pulgadas con Bluetooth.</p>
+                        </div>
+                        <div class="containter text-center">
+                            <p class="card-text">$139.840</p>
+                        </div>
+                        <div class="card-footer text-muted text-center">
+                            <a href="#" class="card-link" id="parlante"> Añadir al
+                                carrito <i class="fa-solid fa-circle-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mb-3 mt-5">
+                        <h3 class="card-header">Teclado</h3>
+                        <img src="img/teclado.jpg" alt="bateria electrica">
+                        <div class="card-body">
+                            <p class="card-text">Teclado Nektar Impact GXP88.</p>
+                        </div>
+                        <div class="containter text-center">
+                            <p class="card-text">$279.990</p>
+                        </div>
+                        <div class="card-footer text-muted text-center">
+                            <a href="#" class="card-link" id="teclado"> Añadir al
+                                carrito <i class="fa-solid fa-circle-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mb-3 mt-5">
+                        <h3 class="card-header">Trombon</h3>
+                        <img src="img/trompeta.jpg" alt="bateria electrica">
+                        <div class="card-body">
+                            <p class="card-text">6420L TROMBON TENOR DORADO BALDASSARE.</p>
+                        </div>
+                        <div class="containter text-center">
+                            <p class="card-text">$399.990</p>
+                        </div>
+                        <div class="card-footer text-muted text-center">
+                            <a href="#" class="card-link" id="trombon"> Añadir al
+                                carrito <i class="fa-solid fa-circle-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%- include('partials/footer')%>
+            <script src="script/productos.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+body {
+    font-family: 'Average Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.full-width {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.li-margin {
+    margin-right: 50px;
+}
+
+.li-hover:hover {
+    letter-spacing: 1px;
+    transition: .4s;
+}
+
+.img-height {
+    width: 100%;
+}
+
+.precio-carrito {
+    font-size: 40px;
+}

@@ -1,0 +1,5 @@
+Cuando te logeas con nueva cuenta el carro debe reiniciarse.
+Cuando vuelves a logearte tu carro debe volver para cada usuario.
+Cuando te logeas debe redirigirte a la tienda de una.
+Falta implementar pasarela de pago.
+Falta el/los video(s).
